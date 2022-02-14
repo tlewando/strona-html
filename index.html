@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html LANG="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="Strona o mnie" />
+  <meta name="Keywords" content="WWW;test" />
+  <meta name="Author" content="Tomasz Lewandowski" />
+  <title>o mnie</title>
+  <link rel="icon" type="image/x-icon" href="ikonka.ico">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body onload="menu('O mnie')">
+
+<style>
+
+</style>
+<header>
+<h1 style="color:black" ><ins>Tomasz Lewandowski</ins></h1>
+</header>
+
+<section>
+<nav>
+<ul>
+<li  onclick="menu('O mnie')"><ins>O mnie</ins>  </li>
+<li onclick="menu('Moje zdjecia')"> Moje zdjęcia </li>
+<li onclick="menu('Hobby')"> Hobby </li>
+  <li onclick="menu('Kontakt')"> Kontakt </li>
+
+</ul>
+</nav>
+<article>
+<div id="O mnie" class="main">
+  <center>
+    <p style="font-size: xx-large ">URODZIŁEM SIĘ W 1980 ROKU.</p>
+    <p style="font-size: x-large">MIESZKAM W POLSCE W MIEŚCIE STOŁECZNYM KRAKOWIE, ALE MIESZKAŁEM TAKŻE WE WROCŁAWIU </p>
+    <h1>         </h1>
+    <div class="responsiwe">
+      <div class=gallery">
+        <img src="krakow.jpg "  width=600   height=260 title = "Kraków - Rynek " alt="Kraków">
+        <img src="wroclaw.jpg "  width=600   height=260 title = "Wrocław- Panorama nocą " alt="Wrocław">
+      </div>
+    </div>
+
+    <p style="font-size: x-large">OBECNIE STUDIUJĘ NA AKADEMI GÓRNICZO - HUTNICZEJ.</p>
+    <img src="agh.jpg"  width=600   height=260 title = "Kraków - AGH " alt="Kraków- AGH">
+  </center>
+
+</div>
+
+  <div id="Moje zdjecia" class="main">
+<center>
+  <p style="font-size: xx-large ">BARDZO LUBIĘ ROBIĆ ZDJĘCIA</p>
+  <p style="">WSCHODÓW </p>
+  <img src="wschod10.jpg "  width=1000   height=260 title = "wschód słońca " alt="wschód słońca">
+  <p style="">I ZACHODÓW SŁOŃCA.</p>
+  <img src="zachod11.jpg"  width=1000   height=260 title = "zachód słońca " alt="zachód słońca">
+</center>
+
+  </div>
+  <div id="Hobby" class="main">
+    <center>
+      <p style="font-size: xx-large " >PODRÓŻE, PODRÓŻE I JESZCZE RAZ PODRÓŻE </p>
+
+      <img src="hobby1.jpg"  width=600   height=300 title = "Liban- meczet w Saidzie " alt="Saida">
+      <p style="">ZWŁASZCZA TAM GDZIE JEST CZYSTE I CIEPŁE MORZE </p>
+      <img src="morze.jpg "  width=1000   height=260 title = "wschód słońca " alt="MORZE">
+      <p style="">I PIĘKNE WIDOKI.</p>
+      <img src="skaly.jpg"  width=1000   height=260 title = "zachód słońca " alt="SKAŁY">
+
+    </center>
+
+   </div>
+  <div id="Kontakt" class="main">
+    <center>
+      <p style="font-size: xx-large ">Jeżeli chcesz sie skontaktować to</p>
+      <form action="mailto:lewando@student.agh.edu.pl" method="post">
+        <input type="text" name="name" placeholder="Twoie imię">
+        <input type="text" name="whats up" placeholder="co słychać" >
+        <input type="submit" value="wyślij">
+      </form>
+    </center>
+
+        <br>
+
+        <i >    "Są dwie drogi, aby przeżyć życie.  <br>
+        Jedna to żyć tak, jakby nic nie było cudem. <br>
+       Druga to żyć tak, jakby cudem było wszystko." <br><br>
+
+          Albert Einstein </i>
+
+
+
+  </div>
+
+</article>
+</section>
+
+<footer>
+  Wszelkie prawa zastrzeżone
+</footer>
+
+<script>
+  function menu(city){
+    var main = document.getElementsByClassName("main")
+
+    for (let m of main){
+      m.style.display = "none"
+    }
+    var cit = document.getElementById(city)
+    cit.style.display = "block"
+
+  }
+</script>
+	
+</body>
+</html>
